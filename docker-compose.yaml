@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  flutterweb:
+    container_name: node_test_c1
+    image: node_test
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
